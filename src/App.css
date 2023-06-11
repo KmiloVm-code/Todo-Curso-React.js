@@ -1,38 +1,110 @@
-.App {
+.TodoCounter {
+  font-size: var(--lg);
+  font-weight: 300;
+  padding: 48px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TodoCounter span {
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.TodoInput {
+  width: calc(100% - 64px);
+  height: 64px;
+  margin: 0 24px;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  background: white;
+  text-align: center;
+  font-size: var(--lg);
+  font-weight: lighter;
+  
 }
 
-.App-header {
-  background-color: #233553;
-  min-height: 100vh;
+.TodoInput:focus {
+  border: 2px solid #61dafa;
+}
+
+.TodoList {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 56px;
+}
+
+.TodoItem {
   display: flex;
-  flex-direction: column;
+  position: relative;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: var(--white);
+  margin-top: 24px;
 }
 
-.App-link {
-  color: #97ca3f;
+.Icon {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--lg);
+  font-weight: bold;
+  color: var(--text-input-light);
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Icon-Check {
+  left: 24px;
+}
+
+.Icon-Check:hover {
+  color: green;
+}
+
+.Icon-Check--active {
+  color: green;
+}
+
+.TodoItem-p {
+  font-size: var(--md);
+  margin: 24px 0 24px 24px;
+  width:calc(100% - 120px);
+}
+
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
+
+.Icon-Delete {
+  right: 24px;
+  top: -12px;
+}
+
+.Icon-Delete:hover {
+  color: red;
+}
+
+.CreateTodoButton {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transform: rotate(0);
+  transition: .3s ease;
+  justify-content: center;
+  z-index: 1;
+}
+
+.CreateTodoButton:hover {
+  transform: rotate(224deg);
 }
