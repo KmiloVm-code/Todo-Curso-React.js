@@ -49,22 +49,19 @@
   position: absolute;
   align-items: center;
   justify-content: center;
-  font-size: var(--lg);
-  font-weight: bold;
-  color: var(--text-input-light);
   cursor: pointer;
 }
 
-.Icon-Check {
+.Icon-check {
   left: 24px;
 }
 
-.Icon-Check:hover {
-  color: green;
+.Icon-check:hover .Icon-svg {
+  fill: green;
 }
 
-.Icon-Check--active {
-  color: green;
+.Icon-check--active .Icon-svg {
+  fill: green;
 }
 
 .TodoItem-p {
@@ -77,13 +74,18 @@
   text-decoration: line-through;
 }
 
-.Icon-Delete {
+.Icon-delete {
   right: 24px;
   top: -12px;
 }
 
-.Icon-Delete:hover {
-  color: red;
+.Icon-delete:hover .Icon-svg {
+  fill: red;
+}
+
+.Icon-svg {
+  width: 24px;
+  height: 24px;
 }
 
 .CreateTodoButton {
