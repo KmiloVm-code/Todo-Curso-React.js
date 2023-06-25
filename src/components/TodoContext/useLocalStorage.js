@@ -40,4 +40,4 @@ function useLocalStorage(itemName, initialValue) {
   };
 }
 
-export { useLocalStorage }
+export { useLocalStorage };
