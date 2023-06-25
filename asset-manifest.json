@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Todo-Curso-React.js/static/css/main.7d2ad18c.css",
+    "main.js": "/Todo-Curso-React.js/static/js/main.bb585946.js",
+    "index.html": "/Todo-Curso-React.js/index.html",
+    "static/media/delete.svg": "/Todo-Curso-React.js/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
+    "static/media/Check.svg": "/Todo-Curso-React.js/static/media/Check.e9a948bba52a34123d2ed7aeda0ea495.svg",
+    "main.7d2ad18c.css.map": "/Todo-Curso-React.js/static/css/main.7d2ad18c.css.map",
+    "main.bb585946.js.map": "/Todo-Curso-React.js/static/js/main.bb585946.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d2ad18c.css",
+    "static/js/main.bb585946.js"
+  ]
+}
